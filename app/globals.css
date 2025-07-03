@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --transparent-foreground: #1717171c;
+  --transparent-background: #ffffff2c;
+  --light-background: #e7e7e7;
+  --light-foreground: #575757;
+  --outline: #77777777;
+  --accent: #dfa300;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --transparent-foreground: #ffffff1c;
+  --transparent-background: #0a0a0a2c;
+  --light-background: #1b1b1b;
+  --light-foreground: #dfdfdf;
+  --outline: #77777777;
+  --accent: #c079fd;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-light-background: var(--light-background);
+  --color-light-foreground: var(--light-foreground);
+  --color-outline: var(--outline);
+  /* --color-accent: var(--accent); */
+  --font-pirata: var(--font-pirata);
+  --font-yellowtail: var(--font-yellowtail);
+  --font-piazzolla: var(--font-piazzolla);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-ubuntu: var(--font-ubuntu);
+  --font-tillium: var(--font-tillium);
+  --font-lekton: var(--font-lekton);
+  --font-space: var(--font-space);
+}
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.grid-effect {
+  background-color: transparent;
+  background-image: radial-gradient(transparent 1px, var(--background) 1px);
+  background-size: 4px 4px;
+  opacity: 1;
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  z-index: 1;
+  flex: none;
+}
+
+.gradient {
+  position: absolute;
+  inset: -50% 0 0;
+  height: 150%;
+  background-image: linear-gradient(transparent 0 50%, var(--transparent-background));
+}
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-x {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-x 27s linear infinite;
+}
+
+.fade {
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.dark .invert-on-dark {
+  filter: invert(1);
+}
+
+.dark .pirata-on-dark {
+  font-family: var(--font-pirata);
+  font-size: 1.13em;
+}
+
+@keyframes glow-cycle {
+
+  0%, 20%, 100% {
+    color: #e2c1ff; 
+    text-shadow: #847e8a;
+  }
+  10% {
+    color: var(--accent);
+    text-shadow:
+      0 0 10px var(--accent),
+      0 0 20px #e1c4fd,
+      0 0 40px #ebd4ff;
+  }
+}
+
+.dark .purple-glow span {
+  animation: glow-cycle 3.5s linear infinite;
+}
+
+
+.dark .purple-glow span:nth-child(1) {
+  animation-delay: 0s;
+}
+.dark .purple-glow span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.dark .purple-glow span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.dark .purple-glow span:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.dark .purple-glow span:nth-child(5) {
+  animation-delay: 1.2s;
+}

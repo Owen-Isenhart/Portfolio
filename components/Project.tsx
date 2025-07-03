@@ -1,0 +1,1 @@
+// this will be the component when you click on a project
