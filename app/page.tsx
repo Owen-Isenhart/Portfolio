@@ -1,10 +1,10 @@
-import NavBar from "../components/NavBar";
-import Introduction from "../components/Introduction"
-import Experience from "../components/Experience";
-import HomeProjects from "../components/HomeProjects";
-import HomeNotes from "../components/HomeNotes";
-import HomeLens from "../components/HomeLens";
-import Footer from "../components/Footer";
+import NavBar from "../components/General/NavBar";
+import Introduction from "../components/Home/Introduction"
+import Experience from "../components/Home/Experience";
+import HomeProjects from "../components/Home/HomeProjects";
+import HomeNotes from "../components/Home/HomeNotes";
+import HomeLens from "../components/Home/HomeLens";
+import Footer from "../components/General/Footer";
 
 export default function Home() {
   return (

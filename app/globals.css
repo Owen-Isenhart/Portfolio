@@ -8,7 +8,7 @@
   --light-background: #e7e7e7;
   --light-foreground: #575757;
   --outline: #77777777;
-  --accent: #dfa300;
+  --accent: #ff8297;
 }
 
 .dark {
@@ -28,7 +28,7 @@
   --color-light-background: var(--light-background);
   --color-light-foreground: var(--light-foreground);
   --color-outline: var(--outline);
-  /* --color-accent: var(--accent); */
+  --color-accent: var(--accent);
   --font-pirata: var(--font-pirata);
   --font-yellowtail: var(--font-yellowtail);
   --font-piazzolla: var(--font-piazzolla);
