@@ -30,7 +30,6 @@ export async function GET(request: NextRequest) {
       ],
       page_size: limit ? parseInt(limit) : undefined,
     });
-    console.log(response.results);
     return new Response(JSON.stringify(response.results));
   } catch (error) {
     return new Response(JSON.stringify({ error: 'Failed to fetch notes' }), {
