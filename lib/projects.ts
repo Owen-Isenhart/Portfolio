@@ -4,7 +4,7 @@ export const projects = [
     title: "HackLab",
     coverImage: "/images/projects/hacklabCover.png",
     description: "A web app for developers to find teams and enhance the development process for projects.",
-    overview: "HackLab was the 1st place and best design winner at the ACM Projects Spring 2025 presentation night. I worked on the backend of the project where I built a Node and Express API deployed on AWS EC2, real-time chat using socket.IO, an AI resume generator using Gemini, the GitHub API, and LinkedIn web scraping to create tailored LaTeX resumes for the user. The project is full of other features not listed here so if you're interested I highly encourage you to check out the repository for yourself.",
+    overview: "HackLab was the 1st place and best design winner at the ACM Projects Spring 2025 presentation night. I worked on the backend of the project where I built a Node and Express API deployed on AWS EC2, real-time chat using socket.IO, an AI resume generator using Gemini, the GitHub API, and LinkedIn web scraping to create tailored LaTeX resumes for the user. Me and the other guy on the backend also made a swagger spec detailing the API routes for easier integrations. The project is full of other features not listed here so if you're interested I highly encourage you to check out the repository for yourself.",
     skills: ["Node.js", "AWS", "PostgreSQL", "Websockets", "Next.js", "Tailwind"],
     features: [
       "AI Project Generation:Our AI assistant Juno suggests tech stacks, MVPs, timelines, and even project thumbnails based on your skills and goals.",
