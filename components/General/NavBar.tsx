@@ -21,7 +21,8 @@ export default function NavBar() {
         
         <div className="font-space space-x-4">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            // had to change this bc of dynamic pages
+            const isActive = (pathname.split("/")[1] === "" && link.label === "Home") || pathname.split("/")[1] === link.label.toLowerCase();
             return (
               <Link
                 key={link.href}

@@ -1,22 +1,8 @@
 import ProjectSlider from "../Home/ProjectSlider";
+import { projects } from "../../lib/projects";
 
-const projects = [
-  {
-    id: 1,
-    title: "Expansion Patch",
-    description: "A web app for developers to find teams and enhance the development process for projects.",
-    skills: ["Node.js", "AWS", "PostgreSQL", "Websockets", "Next.js", "Tailwind"],
-  },
-  {
-    id: 2,
-    title: "Spacia",
-    description: "A web app for applying or creating .bps patch files for Super Mario 64 ROMs.",
-    skills: ["Bit Manipulation", "File Processing", "Encoding", "Next.js", "UI/UX"],
-  },
-];
+const ongoing = projects.filter(project => project.ongoing);
 
-// should change it to make tags not show on mobile they take too much space
-// or maybe just show a couple like the main important ones
 export default function OngoingProjects() {
   return (
     <>
@@ -25,7 +11,7 @@ export default function OngoingProjects() {
           <h2 className="font-space pb-2 text-xl sm:text-2xl md:text-3xl">Current works in progress</h2>
 
           <div className="flex flex-col gap-1 w-full">
-            {projects.map(project => (
+            {ongoing.map(project => (
               <ProjectSlider
                 key={project.id}
                 {...project}
