@@ -1,38 +1,26 @@
 'use client';
 import Link from "next/link";
 import Arrow from "../General/Arrow";
-import { useState, useEffect } from 'react';
 import { Circle } from "lucide-react";
 
+// The Note interface can be moved to a types file for better organization
 interface Note {
-  id: string;
-  properties: {
-    Title: { rich_text: [{ text: { content: string } }] };
-    Author: { rich_text: [{ text: { content: string } }] };
-    Date: { date: { start: string } };
-    Tags: { multi_select: { name: string }[] };
-    Slug: { rich_text: [{ text: { content: string } }] };
-    ReadTime: { rich_text: [{ text: { content: string } }] };
-  };
+    id: string;
+    properties: {
+        Title: { rich_text: [{ text: { content: string } }] };
+        Author: { rich_text: [{ text: { content: string } }] };
+        Date: { date: { start: string } };
+        Tags: { multi_select: { name: string }[] };
+        Slug: { rich_text: [{ text: { content: string } }] };
+        ReadTime: { rich_text: [{ text: { content: string } }] };
+    };
 }
 
-export default function HomeNotes() {
-    const [notes, setNotes] = useState<Note[]>([]);
+interface HomeNotesProps {
+    notes: Note[];
+}
 
-    useEffect(() => {
-        const fetchNotes = async () => {
-            const res = await fetch('/api/notes?limit=3');
-            if (res.ok) {
-                const data: Note[] = await res.json();
-                data.forEach(note => {
-                  console.log(note.properties.Date?.date?.start);
-                });
-                setNotes(data);
-            }
-        };
-        fetchNotes();
-    }, []);
-
+export default function HomeNotes({ notes }: HomeNotesProps) {
     return (
         <section className="bg-[var(--background)] border-b border-dashed border-[var(--outline)]">
             <div className="max-w-3xl mx-auto flex flex-col items-start p-6 border-x border-dashed border-[var(--outline)]">

@@ -26,7 +26,7 @@ export default function Notes() {
 
   useEffect(() => {
     const fetchNotes = async () => {
-      const res = await fetch('/api/notes');
+      const res = await fetch('/api');
       const data: Note[] = await res.json();
       setNotes(data);
 

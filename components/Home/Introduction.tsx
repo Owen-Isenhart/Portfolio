@@ -17,7 +17,7 @@ export default function Introduction() {
               </div>
             </div>
             <div className="w-3/10 md:w-1/4 flex flex-col items-start">
-              <Image className="w-full rounded-3xl" src="/images/oxef.jpg" width={600} height={600} alt="Headshot" />
+              <Image className="w-full rounded-3xl" src="/images/oxef.jpg" width={600} height={600} alt="Headshot" priority />
               <div className="fade overflow-hidden w-full whitespace-nowrap">
                 <div className="inline-block animate-scroll-x">
                   <div className="font-sans text-xs text-light-foreground lg:text-sm lg:text-base inline-flex pt-1">
