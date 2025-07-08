@@ -18,7 +18,7 @@ export default function Experience() {
 
           {/* acm projects + dev */}
           <div className="flex flex-row items-start gap-5 pb-2">
-            <Image className="w-15 lg:w-18 invert-on-dark" src="/images/acm.png" width={200} height={200} alt="acm-logo" />
+            <Image className="w-15 lg:w-18 invert-on-dark" src="/images/acm.avif" width={200} height={200} alt="acm-logo" />
             <div className="flex-col">
               <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                 ACM
@@ -52,7 +52,7 @@ export default function Experience() {
           </div>
           {/* gdsc */}
           <div className="flex flex-row items-start gap-5 pb-2">
-            <Image className="w-15 lg:w-18" src="/images/gdsc.png" width={200} height={200} alt="gdsc-logo" />
+            <Image className="w-15 lg:w-18" src="/images/gdsc.avif" width={200} height={200} alt="gdsc-logo" />
             <div className="flex-col">
               <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                 GDSC
@@ -73,7 +73,7 @@ export default function Experience() {
           </div>
           {/* utd athletics */}
           <div className="flex flex-row items-start gap-5 pb-2">
-            <Image className="w-15 lg:w-18" src="/images/utd.png" width={200} height={200} alt="utd-logo" />
+            <Image className="w-15 lg:w-18" src="/images/utd.avif" width={200} height={200} alt="utd-logo" />
             <div className="flex-col">
               <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                 UTD Athletics
@@ -111,7 +111,7 @@ export default function Experience() {
             <div className="overflow-hidden">
               {/* the ups store */}
               <div className="flex flex-row items-start gap-5 pb-2">
-                <Image className="w-15 lg:w-18" src="/images/ups.png" width={200} height={200} alt="ups-logo" />
+                <Image className="w-15 lg:w-18" src="/images/ups.avif" width={200} height={200} alt="ups-logo" />
                 <div className="flex-col">
                   <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                     The UPS Store
@@ -133,7 +133,7 @@ export default function Experience() {
               </div>
               {/* snappy salads */}
               <div className="flex flex-row items-start gap-5 pb-2">
-                <Image className="w-15 lg:w-18" src="/images/snappy.png" width={200} height={200} alt="snappy-salads-logo" />
+                <Image className="w-15 lg:w-18" src="/images/snappy.avif" width={200} height={200} alt="snappy-salads-logo" />
                 <div className="flex-col">
                   <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                     Snappy Salads

@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "HackLab",
-    coverImage: "/images/projects/hacklabCover.png",
+    coverImage: "/images/projects/hacklabCover.avif",
     description: "A web app for developers to find teams and enhance the development process for projects.",
     overview: "HackLab was the 1st place and best design winner at the ACM Projects Spring 2025 presentation night. I worked on the backend of the project where I built a Node and Express API deployed on AWS EC2, real-time chat using socket.IO, an AI resume generator using Gemini, the GitHub API, and LinkedIn web scraping to create tailored LaTeX resumes for the user. Me and the other guy on the backend also made a swagger spec detailing the API routes for easier integrations. The project is full of other features not listed here so if you're interested I highly encourage you to check out the repository for yourself.",
     skills: ["Node.js", "AWS", "PostgreSQL", "Websockets", "Next.js", "Tailwind"],
@@ -18,7 +18,7 @@ export const projects = [
   {
     id: 2,
     title: "BPSmith",
-    coverImage: "/images/projects/bpsmithCover.png",
+    coverImage: "/images/projects/bpsmithCover.avif",
     description: "A web app for applying or creating .bps patch files for Super Mario 64 ROMs.",
     overview: "ROM Hacks work by creating a bps file by comparing the changes made between an original ROM with a modified ROM, and saving the differences. Then, the bps file can be applied to an original ROM to create the modified ROM from which it came from. This is done to allow the legal distribution of ROM hacks. There are other file formats that can do this as well (ips, ups, etc.), but bps is often better due to supporting larger files, ensuring patch integrity with built-in checksums, and creating smaller patches through delta encoding. So, with BPSmith, you can become a bps blacksmith, and easily apply or create patches in an instant! BPSmith is designed with a focus on a clean, intuitive user interface and a smooth user experience, making the patching process straightforward for everyone, from beginners to experienced ROM hackers.",
     skills: ["Bit Manipulation", "File Processing", "Encoding", "Next.js", "UI/UX"],
@@ -32,7 +32,7 @@ export const projects = [
   {
     id: 3,
     title: "Planet Destroyer",
-    coverImage: "/images/projects/planetdestroyerCover.png",
+    coverImage: "/images/projects/planetdestroyerCover.avif",
     description: "An incremental game built in C# XNA; Generated 180+ itch.io downloads.",
     overview: "Planet Destroyer is an addictive incremental (cookie clicker-style) game where you buy ships and upgrade your abilities to destroy planets. It was developed in C# using the XNA framework and gained popularity on itch.io. This was a fun project to make because the XNA framework is incredibly minimalist, meaning you have to make essentially everything yourself from basic rectangles and tracking user input. I also made most of the games' texture assets myself and really enjoyed creating the pixel art spritesheets. The game scales nicely and is a very interactive experience with fully customizeable settings (including audio, video, and performance). Check out the repository if you're interested! (Disclaimer: it is windows exclusive and will only run on certain windows machines)",
     skills: ["C#", "XNA", "Animation", "Game Design", "Pixel Art"],
@@ -47,7 +47,7 @@ export const projects = [
   {
     id: 4,
     title: "Expansion Patch",
-    coverImage: "/images/projects/comingsoon.png", 
+    coverImage: "/images/projects/comingsoon.avif", 
     description: "A website for romhackers and players to share and find SM64 romhacks, apply/create patches in-house, talk to one another, share assets, and maintain leaderboards.",
     overview: "Currently in development. Building with laravel PHP, will be similar to romhacking.com but with UI improvements and added features.",
     skills: ["PHP", "PostgreSQL", "Websockets", "Tailwind"],
@@ -62,7 +62,7 @@ export const projects = [
   {
     id: 5,
     title: "Spacia",
-    coverImage: "/images/projects/comingsoon.png", 
+    coverImage: "/images/projects/comingsoon.avif", 
     description: "A cross-platform project to enhance interior design planning.",
     overview: "Design your floorplan to create a 3D model of your space, then using our Unity editor, make changes to the space to preview your design decisions before actually committing to them. You can also do a simulated first-person walkthrough of the space. The original plan was going to use LiDAR scanners to get the model of the room, but my phone doesn't have one and I don't have access to an actual scanner, but this is something that I will look into in the future.",
     skills: ["Unity", "PostgreSQL", "Golang", "HTMX"],
@@ -76,12 +76,12 @@ export const projects = [
   {
     id: 6,
     title: "Portfolio",
-    coverImage: "/images/projects/portfolioCover.png", 
+    coverImage: "/images/projects/portfolioCover.avif", 
     description: "The website you're on right now!",
     overview: "This site hosts imformation about me, my projects, and my occasional notes. I made it in Next.js with Tailwind, my notes integrate from Notion's API, and is deployed using an AWS CI/CD pipeline for automatic code builds and deployments to the AWS CloudFront distribution.",
     skills: ["Next.js", "Tailwind", "Notion API", "AWS"],
-    features: [ // IF WE PUT THIS WE HAVE TO ACTUALLY DO THIS
-      "Perfect Google Lighthouse Report:Optimized the website and achievied full 100s in every metric (Performance, Accessibility, Best Practices, and SEO)",
+    features: [ 
+      "All Green Google Lighthouse Report:Optimized the site and achievied 93+ in every metric (Performance, Accessibility, Best Practices, and SEO)",
       "UI and Responsiveness:I carefully crafted the feel and look of this website to make it a smooth experience, and made sure no matter the screen size everything displays properly",
     ],
     link: "https://github.com/Owen-Isenhart/Portfolio",
@@ -90,7 +90,7 @@ export const projects = [
   {
     id: 7,
     title: "Pentagon Pizza",
-    coverImage: "/images/projects/penpizzaCover.png", 
+    coverImage: "/images/projects/penpizzaCover.avif", 
     description: "A web app for tracking how busy pizza resturants near the Pentagon are.",
     overview: "Pentagon Pizza is based on a real-world theory: a spike in late-night pizza orders at the Pentagon often precedes a major global crisis. This application automates the monitoring process, providing an early warning system for significant geopolitical events. By scraping data from pizza establishments in close proximity to the Pentagon, our system analyzes activity levels in real-time. When these levels cross a pre-defined threshold, a 'High Threat Level' is triggered, and an alert is immediately sent out.",
     skills: ["Next.js", "Tailwind", "Webscraping", "Discord.js", "Webhooks"],
@@ -105,7 +105,7 @@ export const projects = [
   {
     id: 8,
     title: "SpeedFools",
-    coverImage: "/images/projects/speedfoolsCover.png", 
+    coverImage: "/images/projects/speedfoolsCover.avif", 
     description: "A website hosting tutorials for SM64 speedruns.",
     overview: "Super Mario 64 speedrunning is an incredibly niche thing to do. However, it's a suprisingly popular thing to watch. On YouTube and Twitch, SM64 speedruns get many views and have a massive following. So I put two and two together, and realized that people really like the game, but there's just such a high barrier to entry that pushes a lot of new people away. As a (now washed, but at one point good) speedrunner of the game myself, I took it upon myself to record and edit hundreds of videos detailing exactly how to do certain tricks and mechanics, and then wrote an extensive guide on resources for how to source equipment and further information.",
     skills: ["HTML", "CSS", "JS"],
@@ -118,7 +118,7 @@ export const projects = [
   {
     id: 9,
     title: "FHS CS Club Website",
-    coverImage: "/images/projects/fhsCover.png", 
+    coverImage: "/images/projects/fhsCover.avif", 
     description: "The website for the cs club at FHS.",
     overview: "I was an officer for my highschool's computer science club and at that point the club struggled with advertising and coordination, so I built this website to centralize the club's information, allow marketing officers to link it to a QR code for better advertising, and help new members with valuable cs resources. This was the first website I ever deployed! :)",
     skills: ["HTML", "CSS", "JS"],
@@ -133,7 +133,7 @@ export const projects = [
   {
     id: 10,
     title: "RoomRunner",
-    coverImage: "/images/projects/roomrunnerCover.png",
+    coverImage: "/images/projects/roomrunnerCover.avif",
     description: "A side scrolling Jetpack Joyride style game.",
     overview: "Made in a team of 3 others for a videogame programming class in C# using the XNA framework. Game includes many features like boss fights, powerups, cosmetics, random obstacles and hazards, infinite levels, quests, customizeable settings and music, and more. My main contributions included the development of the shop, powerups, quests, tutorial, game art, settings and menus, and managing git merges.",
     skills: ["C#", "XNA", "Agile Development", "Pixel Art", "File I/O"],

@@ -10,7 +10,7 @@ export default function LensPics() {
           {imageNumbers.map((number) => (
             <div key={number} className="w-full h-auto aspect-square">
               <img
-                src={`/images/lens/img_${number}.jpg`}
+                src={`/images/lens/img_${number}.avif`}
                 alt={`Showcase image ${number}`}
                 className="w-full h-full object-cover rounded-md shadow-lg"
                 loading="lazy" 

@@ -28,7 +28,7 @@ export default function TopicSegment(props: TopicProps) {
               <h2 className="font-space pb-2 text-xl sm:text-2xl md:text-3xl">{props.title}</h2>
               <div className="flex flex-row justify-between gap-6">
                 <div className="w-1/2 md:w-1/3"> {/* It's often better to wrap the Image in a div for more control */}
-                  <Image className="w-full h-full object-cover rounded-lg" src={props.image[0]} alt="Mountains at Flagstaff" width={3024} height={3024} />
+                  <Image className="w-full h-full object-cover rounded-lg" src={props.image[0]} alt="img" width={3024} height={3024} />
                 </div>
                 <div className="w-2/3 flex-col">
                   <p className="w-full font-sans text-sm md:text-base pb-2">{props.description}</p>
@@ -48,7 +48,7 @@ export default function TopicSegment(props: TopicProps) {
               <div className="flex flex-row justify-between gap-6">
                 <p className="w-2/3 font-sans text-sm md:text-base pb-2">{props.description}</p>
                 <div className="w-1/2 md:w-1/3"> {/* It's often better to wrap the Image in a div for more control */}
-                  <Image className="w-full h-full object-cover rounded-lg" src={props.image[0]} alt="Mountains at Flagstaff" width={3024} height={3024} />
+                  <Image className="w-full h-full object-cover rounded-lg" src={props.image[0]} alt="img" width={3024} height={3024} />
                 </div>
               </div>
             </>}
@@ -59,7 +59,7 @@ export default function TopicSegment(props: TopicProps) {
               <p className="w-full font-sans text-sm md:text-base pb-4">{props.description} </p>
               <div className={`grid ${gridColsMap[props.image.length] || 'grid-cols-1'} gap-4 w-full pb-4`}>
                 {props.image.map(image => (
-                  <Image key={image} className="w-full h-full object-fill rounded-lg" src={image} alt="Mountains at Flagstaff" width={1200} height={1700} />
+                  <Image key={image} className="w-full h-full object-fill rounded-lg" src={image} alt="img" width={1200} height={1700} />
 
                 ))}
               </div>
