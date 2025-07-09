@@ -14,5 +14,5 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 sync ./out s3://your-bucket-name --delete
-      - aws cloudfront create-invalidation --distribution-id YOUR_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+      - aws s3 sync ./out s3://oisenhart-portfolio --delete
+      - aws cloudfront create-invalidation --distribution-id E28PC9PF1TACFJ --paths "/*"
