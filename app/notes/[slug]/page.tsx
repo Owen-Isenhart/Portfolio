@@ -65,7 +65,8 @@ function parseCustomMarkdown(input: string): React.ReactNode[] {
   return elements;
 }
 
-export default async function NotePage({ params }: { params: { slug: string } }) {
+export default async function NotePage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const note = await getNoteData(params.slug);
 
   if (!note) {
