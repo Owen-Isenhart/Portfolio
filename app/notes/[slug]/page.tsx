@@ -10,7 +10,6 @@ import { notFound } from 'next/navigation';
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
-// This function pre-builds all the note pages
 export async function generateStaticParams() {
   if (!process.env.NOTION_DATABASE_ID) {
     throw new Error('Missing Notion Database ID');
@@ -36,34 +35,40 @@ async function getNoteData(slug: string) {
     throw new Error('Missing Notion Database ID');
   }
 
-  const response = await notion.databases.query({
-    database_id: process.env.NOTION_DATABASE_ID,
-    filter: {
-      property: 'Slug',
-      rich_text: {
-        equals: slug,
+  try {
+    const response = await notion.databases.query({
+      database_id: process.env.NOTION_DATABASE_ID,
+      filter: {
+        property: 'Slug',
+        rich_text: {
+          equals: slug,
+        },
       },
-    },
-  });
+    });
 
-  const page = response.results[0];
-  if (!page || !isFullPage(page)) return null;
+    const page = response.results[0];
+    if (!page || !isFullPage(page)) return null;
 
-  const mdblocks = await n2m.pageToMarkdown(page.id);
-  const mdString = n2m.toMarkdownString(mdblocks);
+    const mdblocks = await n2m.pageToMarkdown(page.id);
+    const mdString = n2m.toMarkdownString(mdblocks);
 
-  const imageProperty = page.properties['Image'] as any;
-  let imageUrl: string | null = null;
-  if (imageProperty?.files?.length > 0) {
-    const file = imageProperty.files[0];
-    imageUrl = file.type === 'external' ? file.external.url : file.file.url;
+    const imageProperty = page.properties['Image'] as any;
+    let imageUrl: string | null = null;
+    if (imageProperty?.files?.length > 0) {
+      const file = imageProperty.files[0];
+      imageUrl = file.type === 'external' ? file.external.url : file.file.url;
+    }
+
+    return {
+      properties: page.properties,
+      markdown: mdString.parent,
+      imageUrl,
+    };
+  } catch (error) {
+    // Log the error for debugging, but return null to trigger the 404 page
+    console.error("Error fetching note from Notion:", error);
+    return notFound();
   }
-
-  return {
-    properties: page.properties,
-    markdown: mdString.parent,
-    imageUrl,
-  };
 }
 
 function parseCustomMarkdown(input: string): React.ReactNode[] {

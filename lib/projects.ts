@@ -78,10 +78,10 @@ export const projects = [
     title: "Portfolio",
     coverImage: "/images/projects/portfolioCover.avif", 
     description: "The website you're on right now!",
-    overview: "This site hosts imformation about me, my projects, and my occasional notes. I made it in Next.js with Tailwind, my notes integrate from Notion's API, and is deployed using an AWS CI/CD pipeline for automatic code builds and deployments to the AWS CloudFront distribution.",
+    overview: "This site hosts imformation about me, my projects, and my occasional notes. I made it in Next.js with Tailwind, my notes integrate from Notion's API, and is deployed using AWS Amplify and Route 53.",
     skills: ["Next.js", "Tailwind", "Notion API", "AWS"],
     features: [ 
-      "All Green Google Lighthouse Report:Optimized the site and achievied 93+ in every metric (Performance, Accessibility, Best Practices, and SEO)",
+      "All Green Google Lighthouse Report:Optimized the site and achievied 94+ in every metric (Performance, Accessibility, Best Practices, and SEO)",
       "UI and Responsiveness:I carefully crafted the feel and look of this website to make it a smooth experience, and made sure no matter the screen size everything displays properly",
     ],
     link: "https://github.com/Owen-Isenhart/Portfolio",
