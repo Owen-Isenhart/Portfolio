@@ -2,7 +2,7 @@
 // Pirata One for Logo in dark mode
 // Piazzolla for body text
 // IBM Plex Sans for bigger text
-import { Providers } from './providers' // <-- Import your new providers file
+import Providers from './providers' // <-- Import your new providers file
 import type { Metadata } from "next";
 import { Pirata_One, Yellowtail, Piazzolla, IBM_Plex_Sans, IBM_Plex_Mono, Ubuntu, Titillium_Web, Lekton, Space_Grotesk} from "next/font/google";
 import "./globals.css";
@@ -49,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
         className={`${pirata.variable} ${yellowtail.variable} ${space.variable} ${sans.variable} ${mono.variable} antialiased relative flex min-h-svh flex-col overflow-x-hidden`}
       >
