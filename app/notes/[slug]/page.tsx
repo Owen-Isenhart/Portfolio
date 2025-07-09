@@ -105,7 +105,7 @@ export default async function NotePage(props: { params: Promise<{ slug: string }
       <main>
         <section className="bg-[var(--background)] border-b border-dashed border-[var(--outline)]">
           <article className="max-w-3xl mx-auto flex flex-col items-start p-6 border-x border-dashed border-[var(--outline)] text-foreground font-sans">
-            {imageUrl && (
+            {/* {imageUrl && (
               <Image
                 src={imageUrl}
                 alt={title}
@@ -114,7 +114,7 @@ export default async function NotePage(props: { params: Promise<{ slug: string }
                 height={630}
                 priority
               />
-            )}
+            )} */}
             <h1 className="font-space pb-1 text-xl sm:text-2xl md:text-3xl">{title}</h1>
             <p className="text-sm text-light-foreground">
               By {author} {date ? `on ${new Date(date).toLocaleDateString()}` : ''}
