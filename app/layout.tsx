@@ -4,7 +4,7 @@
 // IBM Plex Sans for bigger text
 import Providers from './providers' // <-- Import your new providers file
 import type { Metadata } from "next";
-import { Pirata_One, Yellowtail, Piazzolla, IBM_Plex_Sans, IBM_Plex_Mono, Ubuntu, Titillium_Web, Lekton, Space_Grotesk} from "next/font/google";
+import { Pirata_One, Yellowtail, IBM_Plex_Sans, IBM_Plex_Mono, Space_Grotesk} from "next/font/google";
 import "./globals.css";
 
 const pirata = Pirata_One({

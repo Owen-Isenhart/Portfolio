@@ -30,7 +30,6 @@ export default async function Notes() {
         <section className="bg-[var(--background)] border-b border-dashed border-[var(--outline)]">
           <div className="max-w-3xl mx-auto flex flex-col items-start p-6 border-x border-dashed border-[var(--outline)]">
             <h1 className="font-space pb-4 text-xl sm:text-2xl md:text-3xl">Notes</h1>
-            {/* Filtering logic can be added here if needed, or handled client-side */}
             <div className="flex flex-col gap-1 w-full">
               {notes.map(note => (
                 <Link className="group relative flex w-full overflow-hidden border border-transparent hover:border-dashed hover:border-outline hover:cursor-pointer" href={`/notes/${note.properties.Slug.rich_text[0].text.content}`} key={note.id}>
