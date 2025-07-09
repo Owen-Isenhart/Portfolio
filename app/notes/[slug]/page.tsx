@@ -10,6 +10,27 @@ import { notFound } from 'next/navigation';
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
+// This function pre-builds all the note pages
+export async function generateStaticParams() {
+  if (!process.env.NOTION_DATABASE_ID) {
+    throw new Error('Missing Notion Database ID');
+  }
+
+  const response = await notion.databases.query({
+    database_id: process.env.NOTION_DATABASE_ID,
+    filter: {
+      property: 'Published',
+      checkbox: {
+        equals: true,
+      },
+    },
+  });
+
+  return response.results.map((page: any) => ({
+    slug: page.properties.Slug.rich_text[0].text.content,
+  }));
+}
+
 async function getNoteData(slug: string) {
   if (!process.env.NOTION_DATABASE_ID) {
     throw new Error('Missing Notion Database ID');
