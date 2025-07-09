@@ -21,6 +21,7 @@ export default function Project(props: ProjectProps) {
         {props.coverImage && (
           <div className="w-full mb-8">
             <Image
+              priority
               src={props.coverImage}
               alt={props.title}
               width={1200}

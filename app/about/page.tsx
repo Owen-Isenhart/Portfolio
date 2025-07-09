@@ -1,7 +1,9 @@
+import dynamic from 'next/dynamic'
+
 import NavBar from "../../components/General/NavBar";
 import AboutIntro from "../../components/About/AboutIntro";
 import TopicSegment from "../../components/About/TopicSegment";
-import Footer from "../../components/General/Footer";
+const Footer = dynamic(() => import("../../components/General/Footer"));
 
 const topics = [
   {

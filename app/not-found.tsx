@@ -15,7 +15,7 @@ export default function NotFound() {
           <div className="flex flex-col mx-auto max-w-3xl p-8 border-x border-dashed border-[var(--outline)]">
             <div className="w-full flex flex-row drop-shadow-accent drop-shadow-lg font-pirata justify-center items-center gap-2 text-9xl md:text-[20vw] lg:text-[15vw]">
               <h1>4</h1>
-              <Image className="w-28 md:w-[20vw] lg:w-[15vw] rounded-full" src="/images/angryluther.png" alt="angry luther" width={1200} height={1200} />
+              <Image className="w-28 md:w-[20vw] lg:w-[15vw] rounded-full" src="/images/angryluther.avif" alt="angry luther" width={1200} height={1200} priority />
               <h1>4</h1>
             </div>
             <div className="w-full flex flex-col justify-center items-center pt-3">

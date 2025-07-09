@@ -1,5 +1,7 @@
+import dynamic from "next/dynamic"
+import Image from "next/image";
 import NavBar from '../../../components/General/NavBar';
-import Footer from '../../../components/General/Footer';
+const Footer = dynamic(() => import('../../../components/General/Footer'));
 import { Client } from '@notionhq/client';
 import { NotionToMarkdown } from 'notion-to-md';
 import { isFullPage } from '@notionhq/client';
@@ -82,10 +84,13 @@ export default async function NotePage({ params }: { params: Promise<{ slug: str
         <section className="bg-[var(--background)] border-b border-dashed border-[var(--outline)]">
           <article className="max-w-3xl mx-auto flex flex-col items-start p-6 border-x border-dashed border-[var(--outline)] text-foreground font-sans">
             {imageUrl && (
-              <img
+              <Image
                 src={imageUrl}
                 alt={title}
-                className="mb-4 w-full"
+                className="mb-4 w-full h-auto"
+                width={1200}
+                height={630}
+                priority
               />
             )}
             <h1 className="font-space pb-1 text-xl sm:text-2xl md:text-3xl">{title}</h1>
