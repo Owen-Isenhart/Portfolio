@@ -13,7 +13,7 @@ export default function Introduction() {
                 <span className="hidden sm:inline"> In my free time, I'm typically working on projects, learning new things, playing games, or at the gym!</span>
               </p>
               <div className="group font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300 flex flex-row">
-                <a className="text-sm md:text-base" href="/resume.pdf">Resume </a> <Arrow />
+                <a className="text-sm md:text-base" target="_blank" rel="noopener noreferrer" href="https://www.overleaf.com/read/hkpkfjvwsnfd#c11142">Resume </a> <Arrow />
               </div>
             </div>
             <div className="w-3/10 md:w-1/4 flex flex-col items-start">

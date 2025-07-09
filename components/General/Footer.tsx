@@ -13,7 +13,7 @@ export default function Footer() {
 
           <div className="flex flex-wrap text-foreground items-center gap-x-6 gap-y-4 mt-6 font-sans">
             <div className="flex w-full sm:w-[calc(50%-0.75rem)] md:w-auto">
-              <a className="group flex flex-row" href="" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <a className="group flex flex-row" href="https://www.linkedin.com/in/owenisenhart/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <Linkedin className="w-6 h-6 text-foreground transition-colors group-hover:text-blue-400" />
                 <p className="pl-2 translate-y-[3px] font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300">
                   LinkedIn
@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
 
             <div className="flex w-full sm:w-[calc(50%-0.75rem)] md:w-auto">
-              <a className="group flex flex-row" href="" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <a className="group flex flex-row" href="https://github.com/Owen-Isenhart" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <Github className="w-6 h-6 text-foreground transition-colors group-hover:text-gray-400" />
                 <p className="pl-2 translate-y-[3px] font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300">
                   GitHub
@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
 
             <div className="flex w-full sm:w-[calc(50%-0.75rem)] md:w-auto">
-              <a className="group flex flex-row" href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+              <a className="group flex flex-row" href="https://www.instagram.com/owenisenhart" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
                 <Instagram className="w-6 h-6 text-foreground transition-colors group-hover:text-pink-500" />
                 <p className="pl-2 translate-y-[3px] font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300">
                   Instagram
@@ -43,7 +43,7 @@ export default function Footer() {
             </div>
 
             <div className="flex w-full sm:w-[calc(50%-0.75rem)] md:w-auto">
-              <a className="group flex flex-row" href="" target="_blank" rel="noopener noreferrer" aria-label="Email">
+              <a className="group flex flex-row" href="mailto:oisenhart.college@gmail.com" aria-label="Email">
                 <Mail className="w-6 h-6 text-foreground transition-colors group-hover:text-red-500" />
                 <p className="pl-2 translate-y-[3px] font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300">
                   Email

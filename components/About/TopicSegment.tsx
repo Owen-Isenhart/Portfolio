@@ -34,7 +34,7 @@ export default function TopicSegment(props: TopicProps) {
                   <p className="w-full font-sans text-sm md:text-base pb-2">{props.description}</p>
                   {props.link && <>
                     <div className="group font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300 flex flex-row">
-                      <a className="text-sm md:text-base" href="" download="Owen-Isenhart-Resume.pdf">{props.linkTitle} </a> <Arrow />
+                      <a className="text-sm md:text-base" target="_blank" rel="noopener noreferrer" href={props.link}>{props.linkTitle} </a> <Arrow />
 
                     </div>
                   </>}
@@ -65,7 +65,7 @@ export default function TopicSegment(props: TopicProps) {
               </div>
               {props.link && <>
                 <div className="group font-mono tracking-tight underline decoration-from-font underline-offset-2 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300 flex flex-row">
-                  <a className="text-sm md:text-base" href="" download="Owen-Isenhart-Resume.pdf">{props.linkTitle} </a> <Arrow />
+                  <a className="text-sm md:text-base" target="_blank" rel="noopener noreferrer" href={props.link}>{props.linkTitle} </a> <Arrow />
 
                 </div>
               </>}
