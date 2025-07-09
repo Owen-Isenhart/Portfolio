@@ -31,7 +31,10 @@ export default function HomeNotes({ notes }: HomeNotesProps) {
                         const title = note.properties.Title.rich_text[0].text.content;
                         const author = note.properties.Author.rich_text[0].text.content;
                         const readTime = note.properties.ReadTime.rich_text[0].text.content;
-                        const date = note.properties.Date.date.start;
+                        //const date = note.properties.Date.date.start;
+
+                        const date = new Date(note.properties.Date.date.start);
+                        const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
 
                         if (!slug) return null;
 
@@ -40,7 +43,7 @@ export default function HomeNotes({ notes }: HomeNotesProps) {
                                 <div className="flex w-full flex-col p-4 font-sans">
                                     <h2 className="text-lg font-semibold lg:text-xl">{title}</h2>
                                     <p className="text-sans pb-2 text-sm md:text-base text-light-foreground flex flex-row">
-                                        {author} <Circle className="w-1 mx-2 -translate-y-[1px] fill-light-foreground" strokeWidth={0} /> {date ? `${new Date(date).toLocaleDateString()}` : ''} <Circle className="w-1 mx-2 -translate-y-[1px] fill-light-foreground" strokeWidth={0} /> {readTime ? `${readTime}` : ''}
+                                        {author} <Circle className="w-1 mx-2 -translate-y-[1px] fill-light-foreground" strokeWidth={0} /> {formattedDate} <Circle className="w-1 mx-2 -translate-y-[1px] fill-light-foreground" strokeWidth={0} /> {readTime ? `${readTime}` : ''}
                                     </p>
                                     <div className="flex flex-wrap gap-2">
                                         {note.properties.Tags?.multi_select.map(tag => (
