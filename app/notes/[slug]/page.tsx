@@ -65,11 +65,12 @@ function parseCustomMarkdown(input: string): React.ReactNode[] {
   return elements;
 }
 
-export default async function NotePage({ params }: { params: Promise<{ slug: string }> }) {
-  const resolvedParams = await params;
-  const note = await getNoteData(resolvedParams.slug);
+export default async function NotePage({ params }: { params: { slug: string } }) {
+  const note = await getNoteData(params.slug);
 
-  if (!note) return notFound();
+  if (!note) {
+    return notFound();
+  }
 
   const title = (note.properties.Title as any)?.rich_text?.[0]?.text?.content ?? 'Untitled';
   const author = (note.properties.Author as any)?.rich_text?.[0]?.text?.content ?? 'Unknown Author';
