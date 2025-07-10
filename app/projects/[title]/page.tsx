@@ -10,9 +10,7 @@ import { notFound } from 'next/navigation';
 export default function ProjectPage() {
   const params = useParams();
   const title = params.title;
-  console.log(title);
   const decodedTitle = decodeURIComponent(title as string);
-  console.log(decodedTitle);
   const project = projects.find(p => p.title === decodedTitle);
 
   if (!project) {
