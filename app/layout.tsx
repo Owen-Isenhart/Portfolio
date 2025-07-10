@@ -1,8 +1,4 @@
-// yellowtail for "After Dark"
-// Pirata One for Logo in dark mode
-// Piazzolla for body text
-// IBM Plex Sans for bigger text
-import Providers from './providers' // <-- Import your new providers file
+import Providers from './providers';
 import type { Metadata } from "next";
 import { Pirata_One, Yellowtail, IBM_Plex_Sans, IBM_Plex_Mono, Space_Grotesk} from "next/font/google";
 import "./globals.css";
@@ -50,6 +46,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" /> 
+      </head>
       <body
         className={`${pirata.variable} ${yellowtail.variable} ${space.variable} ${sans.variable} ${mono.variable} antialiased relative flex min-h-svh flex-col overflow-x-hidden`}
       >
