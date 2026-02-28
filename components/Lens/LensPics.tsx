@@ -1,5 +1,5 @@
 export default function LensPics() {
-  const totalImages = 24;
+  const totalImages = 27;
 
   const imageNumbers = Array.from({ length: totalImages }, (_, i) => i + 1);
 
