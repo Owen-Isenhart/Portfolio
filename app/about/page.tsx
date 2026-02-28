@@ -8,8 +8,8 @@ const Footer = dynamic(() => import("../../components/General/Footer"));
 const topics = [
   {
     id: 2,
-    title: "Gym (Powerlifting)",
-    description: "I've been in gyms since I was very young, but I really started to get consistent and take it seriously back in 2022. Since then I've gone through many different phases in my training, but in mid-late 2024 I started powerlifting and fell in love with it. Shown below are some pictures of my current PRs, a 335 squat, 295 bench, and 455 deadlift.",
+    title: "Powerlifting",
+    description: "I've been in gyms since I was very young, but I really started to get consistent and take it seriously back in 2022. Since then I've gone through many different phases in my training, but in mid-late 2024 I started powerlifting and fell in love with it. Shown below are some pictures of my old PRs, but I'm currently at a 365 squat, 295 bench, and 500 deadlift.",
     image: ["/images/about/squat.avif", "/images/about/bench.avif", "/images/about/deadlift.avif"],
     leftOrRight: null,
     link: "https://www.instagram.com/oats_lifts/",
