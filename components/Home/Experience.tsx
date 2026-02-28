@@ -16,6 +16,28 @@ export default function Experience() {
         <div className="max-w-3xl mx-auto flex flex-col items-start p-6 border-x border-dashed border-[var(--outline)]">
           <h2 className="font-space pb-2 text-xl sm:text-2xl md:text-3xl">Experience</h2>
 
+          {/* hilti */}
+          <div className="flex flex-row items-start gap-5 pb-2">
+            <Image className="w-15 lg:w-18" src="/images/hilti.avif" width={200} height={200} alt="hilti-logo" />
+            <div className="flex-col">
+              <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
+                Hilti
+              </h3>
+              <div className="flex flex-row items-center gap-1">
+                <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
+                <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
+                  Software Development Intern <span className="font-normal text-light-foreground text-xs md:text-sm">(Sep 2025 - Mar 2026)</span>
+                </p>
+              </div>
+              <div className="flex flex-row items-center gap-1">
+                <Circle className="w-2" strokeWidth={0} />
+                <p className="font-sans text-sm md:text-base text-foreground pb-1">
+                  Engineered diverse full-stack features using .NET and Angular, with a focus on remediating security vulnerabilities.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* acm projects + dev */}
           <div className="flex flex-row items-start gap-5 pb-2">
             <Image className="w-15 lg:w-18 invert-on-dark" src="/images/acm.avif" width={200} height={200} alt="acm-logo" />
@@ -60,7 +82,19 @@ export default function Experience() {
               <div className="flex flex-row items-center gap-1">
                 <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
                 <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
-                  Technical Committee Officer <span className="font-normal text-light-foreground text-xs md:text-sm">(May 2025 - Current)</span>
+                  Project Manager <span className="font-normal text-light-foreground text-xs md:text-sm">(Jan 2026 - Current)</span>
+                </p>
+              </div>
+              <div className="flex flex-row items-center gap-1">
+                <Circle className="w-2" strokeWidth={0} />
+                <p className="font-sans text-sm md:text-base text-foreground pb-1">
+                  Lead a time of 5 over 6 weeks to build and deploy a project, currently leading Enarc Exchange, a UTD themed prediction market.
+                </p>
+              </div>
+              <div className="flex flex-row items-center gap-1">
+                <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
+                <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
+                  Technical Committee Officer <span className="font-normal text-light-foreground text-xs md:text-sm">(May 2025 - Jan 2026)</span>
                 </p>
               </div>
               <div className="flex flex-row items-center gap-1">
