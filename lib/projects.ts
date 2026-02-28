@@ -27,7 +27,7 @@ export const projects = [
         "Create Patches:Create your own .bps patches from modified ROMs."
     ],
     link: "https://github.com/Owen-Isenhart/BPSmith",
-    ongoing: true,
+    ongoing: false,
   },
   {
     id: 3,
@@ -46,31 +46,17 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Expansion Patch",
-    coverImage: "/images/projects/comingsoon.avif", 
-    description: "A website for romhackers and players to share and find SM64 romhacks, apply/create patches in-house, talk to one another, share assets, and maintain leaderboards.",
-    overview: "Currently in development. Building with laravel PHP, will be similar to romhacking.com but with UI improvements and added features.",
-    skills: ["PHP", "PostgreSQL", "Websockets", "Tailwind"],
+    title: "rawr",
+    coverImage: "/images/projects/comingsoon.avif",
+    description: "(root access: wipe royale) A platform for agents hacking agents",
+    overview: "rawr is a website where you can train your own agent like a pokemon and upgrade it with different skills, and then have it battle other agents all running in docker containers where the objective is to hack the other agents offline, and the last agent standing wins.",
+    skills: ["Python", "Docker", "AI", "Web Development"],
     features: [
-      "Real-time Chat:Collaborate with users.",
-      "Share and find hacks:Post a hack of your own or find other hacks to play.",
-      "Speedrunning Leaderboard:Submit your run of a romhack, get it verified, and fight for your spot at first place!",
+        "Agent Training:Train your agent with different skills and strategies to prepare it for battle.",
+        "Real-Time Battles:Watch your agent battle against others in real-time, with the goal of hacking the opponent offline.",
+        "Community Engagement:Join a community of like-minded individuals who are passionate about AI and cybersecurity."
     ],
-    link: "https://github.com/Owen-Isenhart/ExpansionPatch",
-    ongoing: true,
-  },
-  {
-    id: 5,
-    title: "Spacia",
-    coverImage: "/images/projects/comingsoon.avif", 
-    description: "A cross-platform project to enhance interior design planning.",
-    overview: "Design your floorplan to create a 3D model of your space, then using our Unity editor, make changes to the space to preview your design decisions before actually committing to them. You can also do a simulated first-person walkthrough of the space. The original plan was going to use LiDAR scanners to get the model of the room, but my phone doesn't have one and I don't have access to an actual scanner, but this is something that I will look into in the future.",
-    skills: ["Unity", "PostgreSQL", "Golang", "HTMX"],
-    features: [
-      "Floorplan Editor:Using simple drag and drop mechanics, build a floorplan and watch it automatically become a 3D Space.",
-      "3D Model Editor:Use the Unity app to make quick and easy changes and then preview your space",
-    ],
-    link: "https://github.com/Owen-Isenhart/Spacia",
+    link: "https://github.com/Owen-Isenhart/rawr",
     ongoing: true,
   },
   {
@@ -143,5 +129,51 @@ export const projects = [
     ],
     link: "https://github.com/Christian-Zech/RoomRunner",
     ongoing: false,
+  },
+  {
+    id: 11,
+    title: "Enarc Exchange",
+    coverImage: "/images/projects/comingsoon.avif",
+    description: "A UTD-themed prediction market where students bet 'Temoc Tokens' on campus events.",
+    overview: "Enarc Exchange is a prediction market platform designed specifically for the UTD community, allowing students to bet on academics, sports, and campus life using a virtual currency called 'Temoc Tokens'. As the project manager, I led a team of 5 over 6 weeks to build and deploy the project. My responsibilities included overseeing the development process, coordinating between frontend and backend teams, and ensuring timely delivery of features. However, I did also do a lot of development given the tight schedule.",
+    skills: ["Node.js", "PostgreSQL", "Socket.io", "AWS", "JWT", "Docker"],
+    features: [
+      "Predictive Markets: Bet on UTD-specific events using the LMSR pricing model for dynamic odds.",
+      "UTD Exclusive Authentication: Secure sign-up restricted to @utdallas.edu emails with JWT-based sessions and a 500 token starting balance.",
+      "Real-time Data: Live market updates and chat feeds powered by Socket.io to keep users engaged.",
+      "User Profiles: Full CRUD functionality to track profits, losses, active bets, and transaction history."
+    ],
+    link: "https://github.com/Owen-Isenhart/EnarcExchange",
+    ongoing: true,
+  },
+  {
+    id: 12,
+    title: "oatsDB",
+    coverImage: "/images/projects/comingsoon.avif",
+    description: "A high-security database engine featuring automated data decay and cryptographic audit trails.",
+    overview: "OatsDB (Observable Audit & Temporal Shredding) is a database project focused on privacy and verifiable security. I am building the engine in C++ with a focus on 'Observable Audit & Temporal Shredding' (O.A.T.S.), implementing cryptographic Time-To-Live (TTL) for secure data decay and a Merkle Tree ledger to provide a verifiable audit trail for all operations. The system utilizes an LSM-Tree (Log-Structured Merge-Tree) architecture for high-performance writes and leverages libsodium for robust cryptographic primitives.",
+    skills: ["C++", "LSM-Trees", "Cryptography", "Systems Programming", "libsodium"],
+    features: [
+      "Cryptographic Data Decay: Automatic and secure shredding of data based on predefined expiration settings.",
+      "Verifiable Audit Trail: A Merkle Tree-backed ledger that allows users to verify the integrity and history of the database.",
+      "High-Performance Storage: Optimized for write-heavy workloads using a custom log-structured merge-tree implementation."
+    ],
+    link: "https://github.com/Owen-Isenhart/OatsDB",
+    ongoing: true,
+  },
+  {
+    id: 13,
+    title: "Furrow",
+    coverImage: "/images/projects/comingsoon.avif",
+    description: "A B2B labor routing and optimization engine designed for large-scale agricultural operations.",
+    overview: "Furrow is a logistics engine designed to tackle labor, the largest expense in the agricultural industry. The platform provides sophisticated labor routing and task optimization to streamline farm workflows.",
+    skills: ["C++", "Eigen", "OpenCV", "Optimization", "Logistics"],
+    features: [
+      "Labor Routing Engine: Advanced algorithms to optimize worker movement and resource allocation across large fields.",
+      "Real-time Adaptivity: Dynamic routing that adjusts to external factors like equipment status and shifting weather patterns.",
+      "Logistics Optimization: A B2B solution focused on reducing overhead and increasing efficiency in agricultural production."
+    ],
+    link: "https://github.com/Owen-Isenhart/Furrow",
+    ongoing: true,
   },
 ];

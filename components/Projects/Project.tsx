@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Arrow from "../General/Arrow"
+
 interface ProjectProps {
   id: number;
   title: string;
@@ -26,7 +27,9 @@ export default function Project(props: ProjectProps) {
               alt={props.title}
               width={1200}
               height={675}
-              className="rounded-lg object-cover"
+              className={`rounded-lg object-cover ${
+                props.coverImage.includes('comingsoon.avif') ? 'invert-on-dark' : ''
+              }`}
             />
           </div>
         )}
