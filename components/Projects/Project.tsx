@@ -27,6 +27,7 @@ export default function Project(props: ProjectProps) {
               alt={props.title}
               width={1200}
               height={675}
+              sizes="(max-width: 768px) 100vw, 768px"
               className={`rounded-lg object-cover ${
                 props.coverImage.includes('comingsoon.avif') ? 'invert-on-dark' : ''
               }`}

@@ -16,6 +16,22 @@ export const projects = [
     ongoing: false,
   },
   {
+    id: 11,
+    title: "Enarc Exchange",
+    coverImage: "/images/projects/comingsoon.avif",
+    description: "A UTD-themed prediction market where students bet 'Temoc Tokens' on campus events.",
+    overview: "Enarc Exchange is a prediction market platform designed specifically for the UTD community, allowing students to bet on academics, sports, and campus life using a virtual currency called 'Temoc Tokens'. As the project manager, I led a team of 5 over 6 weeks to build and deploy the project. My responsibilities included overseeing the development process, coordinating between frontend and backend teams, and ensuring timely delivery of features. However, I did also do a lot of development given the tight schedule.",
+    skills: ["Node.js", "PostgreSQL", "Socket.io", "AWS", "JWT", "Docker"],
+    features: [
+      "Predictive Markets: Bet on UTD-specific events using the LMSR pricing model for dynamic odds.",
+      "UTD Exclusive Authentication: Secure sign-up restricted to @utdallas.edu emails with JWT-based sessions and a 500 token starting balance.",
+      "Real-time Data: Live market updates and chat feeds powered by Socket.io to keep users engaged.",
+      "User Profiles: Full CRUD functionality to track profits, losses, active bets, and transaction history."
+    ],
+    link: "https://github.com/Owen-Isenhart/EnarcExchange",
+    ongoing: false,
+  },
+  {
     id: 2,
     title: "BPSmith",
     coverImage: "/images/projects/bpsmithCover.avif",
@@ -130,37 +146,22 @@ export const projects = [
     link: "https://github.com/Christian-Zech/RoomRunner",
     ongoing: false,
   },
-  {
-    id: 11,
-    title: "Enarc Exchange",
-    coverImage: "/images/projects/comingsoon.avif",
-    description: "A UTD-themed prediction market where students bet 'Temoc Tokens' on campus events.",
-    overview: "Enarc Exchange is a prediction market platform designed specifically for the UTD community, allowing students to bet on academics, sports, and campus life using a virtual currency called 'Temoc Tokens'. As the project manager, I led a team of 5 over 6 weeks to build and deploy the project. My responsibilities included overseeing the development process, coordinating between frontend and backend teams, and ensuring timely delivery of features. However, I did also do a lot of development given the tight schedule.",
-    skills: ["Node.js", "PostgreSQL", "Socket.io", "AWS", "JWT", "Docker"],
-    features: [
-      "Predictive Markets: Bet on UTD-specific events using the LMSR pricing model for dynamic odds.",
-      "UTD Exclusive Authentication: Secure sign-up restricted to @utdallas.edu emails with JWT-based sessions and a 500 token starting balance.",
-      "Real-time Data: Live market updates and chat feeds powered by Socket.io to keep users engaged.",
-      "User Profiles: Full CRUD functionality to track profits, losses, active bets, and transaction history."
-    ],
-    link: "https://github.com/Owen-Isenhart/EnarcExchange",
-    ongoing: true,
-  },
-  {
-    id: 12,
-    title: "oatsDB",
-    coverImage: "/images/projects/comingsoon.avif",
-    description: "A high-security database engine featuring automated data decay and cryptographic audit trails.",
-    overview: "OatsDB (Observable Audit & Temporal Shredding) is a database project focused on privacy and verifiable security. I am building the engine in C++ with a focus on 'Observable Audit & Temporal Shredding' (O.A.T.S.), implementing cryptographic Time-To-Live (TTL) for secure data decay and a Merkle Tree ledger to provide a verifiable audit trail for all operations. The system utilizes an LSM-Tree (Log-Structured Merge-Tree) architecture for high-performance writes and leverages libsodium for robust cryptographic primitives.",
-    skills: ["C++", "LSM-Trees", "Cryptography", "Systems Programming", "libsodium"],
-    features: [
-      "Cryptographic Data Decay: Automatic and secure shredding of data based on predefined expiration settings.",
-      "Verifiable Audit Trail: A Merkle Tree-backed ledger that allows users to verify the integrity and history of the database.",
-      "High-Performance Storage: Optimized for write-heavy workloads using a custom log-structured merge-tree implementation."
-    ],
-    link: "https://github.com/Owen-Isenhart/OatsDB",
-    ongoing: true,
-  },
+  
+  // {
+  //   id: 12,
+  //   title: "oatsDB",
+  //   coverImage: "/images/projects/comingsoon.avif",
+  //   description: "A high-security database engine featuring automated data decay and cryptographic audit trails.",
+  //   overview: "OatsDB (Observable Audit & Temporal Shredding) is a database project focused on privacy and verifiable security. I am building the engine in C++ with a focus on 'Observable Audit & Temporal Shredding' (O.A.T.S.), implementing cryptographic Time-To-Live (TTL) for secure data decay and a Merkle Tree ledger to provide a verifiable audit trail for all operations. The system utilizes an LSM-Tree (Log-Structured Merge-Tree) architecture for high-performance writes and leverages libsodium for robust cryptographic primitives.",
+  //   skills: ["C++", "LSM-Trees", "Cryptography", "Systems Programming", "libsodium"],
+  //   features: [
+  //     "Cryptographic Data Decay: Automatic and secure shredding of data based on predefined expiration settings.",
+  //     "Verifiable Audit Trail: A Merkle Tree-backed ledger that allows users to verify the integrity and history of the database.",
+  //     "High-Performance Storage: Optimized for write-heavy workloads using a custom log-structured merge-tree implementation."
+  //   ],
+  //   link: "https://github.com/Owen-Isenhart/OatsDB",
+  //   ongoing: true,
+  // },
   {
     id: 13,
     title: "Furrow",

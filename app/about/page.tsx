@@ -21,8 +21,8 @@ const topics = [
     description: "In 2023, I lived and breathed chess. All of my free time went to playing games, solving puzzles, or reading theory (you can see dinky, the neighborhood cat, studying the Giuoco Piano opening with me). While I don't play quite as much as I used to, when I have time I still love to play a couple bullet games here and there.",
     image: ["/images/about/chess.avif"],
     leftOrRight: true,
-    link: "https://www.chess.com/member/0xef",
-    linkTitle: "Add me on chess.com"
+    link: "https://lichess.org/@/onsolix",
+    linkTitle: "Add me on lichess"
   },
   {
     id: 5,

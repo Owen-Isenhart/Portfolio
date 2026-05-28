@@ -9,6 +9,7 @@ export default function Experience() {
   const [showMore, setShowMore] = useState(false);
 
   const buttonStyles = "group rounded-sm flex flex-row items-center justify-center gap-2 font-sans text-xs md:text-sm px-4 py-1 bg-light-background border border-transparent border-dashed hover:border-[var(--outline)] hover:cursor-pointer";
+  const logoSizes = "(max-width: 768px) 60px, 72px";
   // the divs probably should've been made into components but it's fine
   return (
     <>
@@ -16,9 +17,31 @@ export default function Experience() {
         <div className="max-w-3xl mx-auto flex flex-col items-start p-6 border-x border-dashed border-[var(--outline)]">
           <h2 className="font-space pb-2 text-xl sm:text-2xl md:text-3xl">Experience</h2>
 
+          {/* goldman */}
+          <div className="flex flex-row items-start gap-5 pb-2">
+            <Image className="w-15 lg:w-18" src="/images/goldman.avif" width={200} height={200} alt="hilti-logo" sizes={logoSizes} priority fetchPriority="high" />
+            <div className="flex-col">
+              <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
+                Goldman Sachs
+              </h3>
+              <div className="flex flex-row items-center gap-1">
+                <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
+                <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
+                  Software Engineer Intern <span className="font-normal text-light-foreground text-xs md:text-sm">(Jun 2026 - Aug 2026)</span>
+                </p>
+              </div>
+              <div className="flex flex-row items-center gap-1">
+                <Circle className="w-2" strokeWidth={0} />
+                <p className="font-sans text-sm md:text-base text-foreground pb-1">
+                  Working on the IAM team.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* hilti */}
           <div className="flex flex-row items-start gap-5 pb-2">
-            <Image className="w-15 lg:w-18" src="/images/hilti.avif" width={200} height={200} alt="hilti-logo" />
+            <Image className="w-15 lg:w-18" src="/images/hilti.avif" width={200} height={200} alt="hilti-logo" sizes={logoSizes} priority fetchPriority="high" />
             <div className="flex-col">
               <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                 Hilti
@@ -26,7 +49,7 @@ export default function Experience() {
               <div className="flex flex-row items-center gap-1">
                 <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
                 <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
-                  Software Development Intern <span className="font-normal text-light-foreground text-xs md:text-sm">(Sep 2025 - Mar 2026)</span>
+                  Software Development Intern <span className="font-normal text-light-foreground text-xs md:text-sm">(Sep 2025 - May 2026)</span>
                 </p>
               </div>
               <div className="flex flex-row items-center gap-1">
@@ -40,7 +63,7 @@ export default function Experience() {
 
           {/* acm projects + dev */}
           <div className="flex flex-row items-start gap-5 pb-2">
-            <Image className="w-15 lg:w-18 invert-on-dark" src="/images/acm.avif" width={200} height={200} alt="acm-logo" />
+            <Image className="w-15 lg:w-18 invert-on-dark" src="/images/acm.avif" width={200} height={200} alt="acm-logo" sizes={logoSizes} priority />
             <div className="flex-col">
               <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                 ACM
@@ -48,7 +71,7 @@ export default function Experience() {
               <div className="flex flex-row items-center gap-1">
                 <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
                 <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
-                  Development Officer <span className="font-normal text-light-foreground text-xs md:text-sm">(May 2025 - Current)</span>
+                  Development Officer <span className="font-normal text-light-foreground text-xs md:text-sm">(May 2025 - May 2026)</span>
                 </p>
               </div>
               <div className="flex flex-row items-center gap-1">
@@ -74,7 +97,7 @@ export default function Experience() {
           </div>
           {/* gdsc */}
           <div className="flex flex-row items-start gap-5 pb-2">
-            <Image className="w-15 lg:w-18" src="/images/gdsc.avif" width={200} height={200} alt="gdsc-logo" />
+            <Image className="w-15 lg:w-18" src="/images/gdsc.avif" width={200} height={200} alt="gdsc-logo" sizes={logoSizes} />
             <div className="flex-col">
               <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                 GDSC
@@ -82,7 +105,7 @@ export default function Experience() {
               <div className="flex flex-row items-center gap-1">
                 <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
                 <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
-                  Project Manager <span className="font-normal text-light-foreground text-xs md:text-sm">(Jan 2026 - Current)</span>
+                  Project Manager <span className="font-normal text-light-foreground text-xs md:text-sm">(Jan 2026 - May 2026)</span>
                 </p>
               </div>
               <div className="flex flex-row items-center gap-1">
@@ -105,28 +128,6 @@ export default function Experience() {
               </div>
             </div>
           </div>
-          {/* utd athletics */}
-          <div className="flex flex-row items-start gap-5 pb-2">
-            <Image className="w-15 lg:w-18" src="/images/utd.avif" width={200} height={200} alt="utd-logo" />
-            <div className="flex-col">
-              <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
-                UTD Athletics
-              </h3>
-              <div className="flex flex-row items-center gap-1">
-                <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
-                <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
-                  Student Assistant <span className="font-normal text-light-foreground text-xs md:text-sm">(Aug 2024 - Current)</span>
-                </p>
-              </div>
-              <div className="flex flex-row items-center gap-1">
-                <Circle className="w-2" strokeWidth={0} />
-                <p className="font-sans text-sm md:text-base text-foreground pb-1">
-                  Execute and assist with all phases of game day logistics for the UTD Athletics department, including setup, operational oversight, fan assistance, and teardown to ensure successful events.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* show more button (if not expanded) */}
           {/* arrow is rotate to point down */}
           {!showMore && (
@@ -143,9 +144,31 @@ export default function Experience() {
           {/* collapsible section */}
           <div className={`grid w-full transition-all duration-500 ease-in-out ${showMore ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
             <div className="overflow-hidden">
+              {/* utd athletics */}
+              <div className="flex flex-row items-start gap-5 pb-2">
+                <Image className="w-15 lg:w-18" src="/images/utd.avif" width={200} height={200} alt="utd-logo" sizes={logoSizes} loading="lazy" />
+                <div className="flex-col">
+                  <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
+                    UTD Athletics
+                  </h3>
+                  <div className="flex flex-row items-center gap-1">
+                    <Circle className="w-2" fill="var(--foreground)" strokeWidth={0} />
+                    <p className="font-sans font-semibold text-sm md:text-base text-foreground pb-1">
+                      Student Assistant <span className="font-normal text-light-foreground text-xs md:text-sm">(Aug 2024 - May 2026)</span>
+                    </p>
+                  </div>
+                  <div className="flex flex-row items-center gap-1">
+                    <Circle className="w-2" strokeWidth={0} />
+                    <p className="font-sans text-sm md:text-base text-foreground pb-1">
+                      Execute and assist with all phases of game day logistics for the UTD Athletics department, including setup, operational oversight, fan assistance, and teardown to ensure successful events.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {/* the ups store */}
               <div className="flex flex-row items-start gap-5 pb-2">
-                <Image className="w-15 lg:w-18" src="/images/ups.avif" width={200} height={200} alt="ups-logo" />
+                <Image className="w-15 lg:w-18" src="/images/ups.avif" width={200} height={200} alt="ups-logo" sizes={logoSizes} loading="lazy" />
                 <div className="flex-col">
                   <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                     The UPS Store
@@ -167,7 +190,7 @@ export default function Experience() {
               </div>
               {/* snappy salads */}
               <div className="flex flex-row items-start gap-5 pb-2">
-                <Image className="w-15 lg:w-18" src="/images/snappy.avif" width={200} height={200} alt="snappy-salads-logo" />
+                <Image className="w-15 lg:w-18" src="/images/snappy.avif" width={200} height={200} alt="snappy-salads-logo" sizes={logoSizes} loading="lazy" />
                 <div className="flex-col">
                   <h3 className="font-mono tracking-tight text-md sm:text-lg md:text-xl">
                     Snappy Salads

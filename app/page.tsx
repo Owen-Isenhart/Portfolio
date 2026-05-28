@@ -4,8 +4,8 @@ import NavBar from "../components/General/NavBar";
 import Introduction from "../components/Home/Introduction";
 import Experience from "../components/Home/Experience";
 import HomeProjects from "../components/Home/HomeProjects";
+import HomeLens from "../components/Home/HomeLens";
 const HomeNotes = dynamic(() => import("../components/Home/HomeNotes"));
-const HomeLens = dynamic(() => import('../components/Home/HomeLens'))
 const Footer = dynamic(() => import('../components/General/Footer'))
 import { getNotes } from "../lib/notes";
 

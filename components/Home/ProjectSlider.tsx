@@ -35,6 +35,8 @@ export default function ProjectSlider(props: ProjectSliderProps) {
           alt={props.title}
           width={props.width}
           height={props.height}
+          sizes="192px"
+          loading="lazy"
           style={{ objectFit: "contain" }}
         />
       </div>
