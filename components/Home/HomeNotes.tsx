@@ -2,22 +2,10 @@
 import Link from "next/link";
 import Arrow from "../General/Arrow";
 import { Circle } from "lucide-react";
-
-// The Note interface can be moved to a types file for better organization
-interface Note {
-    id: string;
-    properties: {
-        Title: { rich_text: [{ text: { content: string } }] };
-        Author: { rich_text: [{ text: { content: string } }] };
-        Date: { date: { start: string } };
-        Tags: { multi_select: { name: string }[] };
-        Slug: { rich_text: [{ text: { content: string } }] };
-        ReadTime: { rich_text: [{ text: { content: string } }] };
-    };
-}
+import type { NoteSummary } from "../../lib/notes";
 
 interface HomeNotesProps {
-    notes: Note[];
+    notes: NoteSummary[];
 }
 
 export default function HomeNotes({ notes }: HomeNotesProps) {
@@ -27,13 +15,12 @@ export default function HomeNotes({ notes }: HomeNotesProps) {
                 <h2 className="font-space pb-2 text-xl sm:text-2xl md:text-3xl">Notes</h2>
                 <div className="flex flex-col gap-1 w-full">
                     {notes.map(note => {
-                        const slug = note.properties.Slug.rich_text[0].text.content;
-                        const title = note.properties.Title.rich_text[0].text.content;
-                        const author = note.properties.Author.rich_text[0].text.content;
-                        const readTime = note.properties.ReadTime.rich_text[0].text.content;
-                        //const date = note.properties.Date.date.start;
+                            const slug = note.slug;
+                            const title = note.title;
+                            const author = note.author;
+                            const readTime = note.readTime;
 
-                        const date = new Date(note.properties.Date.date.start);
+                            const date = new Date(note.date);
                         const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
 
                         if (!slug) return null;
@@ -46,9 +33,9 @@ export default function HomeNotes({ notes }: HomeNotesProps) {
                                         {author} <Circle className="w-1 mx-2 -translate-y-[1px] fill-light-foreground" strokeWidth={0} /> {formattedDate} <Circle className="w-1 mx-2 -translate-y-[1px] fill-light-foreground" strokeWidth={0} /> {readTime ? `${readTime}` : ''}
                                     </p>
                                     <div className="flex flex-wrap gap-2">
-                                        {note.properties.Tags?.multi_select.map(tag => (
-                                            <span key={tag.name} className="bg-light-background text-xs px-2 py-1 rounded-sm font-mono">
-                                                {tag.name}
+                                        {note.tags?.map(tag => (
+                                            <span key={tag} className="bg-light-background text-xs px-2 py-1 rounded-sm font-mono">
+                                                {tag}
                                             </span>
                                         ))}
                                     </div>

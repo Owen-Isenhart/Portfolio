@@ -8,22 +8,11 @@ import HomeLens from "../components/Home/HomeLens";
 const HomeNotes = dynamic(() => import("../components/Home/HomeNotes"));
 const Footer = dynamic(() => import('../components/General/Footer'))
 import { getNotes } from "../lib/notes";
-
-interface Note {
-  id: string;
-  properties: {
-    Title: { rich_text: [{ text: { content: string } }] };
-    Author: { rich_text: [{ text: { content: string } }] };
-    Date: { date: { start: string } };
-    Tags: { multi_select: { name: string }[] };
-    Slug: { rich_text: [{ text: { content: string } }] };
-    ReadTime: { rich_text: [{ text: { content: string } }] };
-  };
-}
+import type { NoteSummary } from "../lib/notes";
 
 
 export default async function Home() {
-  const notes: Note[] = await getNotes(3);
+  const notes: NoteSummary[] = await getNotes(3);
 
   return (
     <>

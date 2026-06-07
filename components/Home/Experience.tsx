@@ -89,7 +89,7 @@ export default function Experience() {
               <div className="flex flex-row items-center gap-1">
                 <Circle className="w-2" strokeWidth={0} />
                 <p className="font-sans text-sm md:text-base text-foreground pb-1">
-                  On the backend for HackLab, ACM Projects' 1st place and best design winner, I built a Node and Express API (deployed on AWS EC2),
+                  On the backend for HackLab, ACM Projects&apos; 1st place and best design winner, I built a Node and Express API (deployed on AWS EC2),
                   real-time chat, and an AI resume generator using Gemini, the GitHub API, and LinkedIn webscraping to create tailored LaTeX resumes from LinkedIn data.
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function Experience() {
               <div className="flex flex-row items-center gap-1">
                 <Circle className="w-2" strokeWidth={0} />
                 <p className="font-sans text-sm md:text-base text-foreground pb-1">
-                  Contributed to the design and development of the UTD GDSC website, host workshops teaching students web development, and help plan and assist with other officer's workshops.
+                  Contributed to the design and development of the UTD GDSC website, host workshops teaching students web development, and help plan and assist with other officer&apos;s workshops.
                 </p>
               </div>
             </div>

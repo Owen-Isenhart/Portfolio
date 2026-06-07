@@ -19,9 +19,9 @@ export default function Introduction() {
       <section className="bg-[var(--background)] border-b border-dashed border-[var(--outline)]">
           <div className="flex flex-row mx-auto max-w-3xl items-start p-6 border-x border-dashed border-[var(--outline)]">
             <div className="max-w-3xl w-full mx-auto flex flex-col items-start">
-              <h2 className="font-space pb-2 text-xl sm:text-2xl md:text-3xl">Hey, I'm <span className="pirata-on-dark purple-glow"><span>O</span><span>w</span><span>e</span><span>n</span><span>!</span></span></h2>
-              <p className="font-sans text-sm md:text-base pr-6 pb-2">I'm a passionate 20-year-old computer science student at UTD dedicated to building high-quality software. 
-                <span className="hidden sm:inline"> In my free time, I'm typically working on projects, learning new things, playing games, or at the gym!</span>
+              <h2 className="font-space pb-2 text-xl sm:text-2xl md:text-3xl">Hey, I&apos;m <span className="pirata-on-dark purple-glow"><span>O</span><span>w</span><span>e</span><span>n</span><span>!</span></span></h2>
+              <p className="font-sans text-sm md:text-base pr-6 pb-2">I&apos;m a passionate 20-year-old computer science student at UTD dedicated to building high-quality software. 
+                <span className="hidden sm:inline"> In my free time, I&apos;m typically working on projects, learning new things, playing games, or at the gym!</span>
               </p>
               <div className="group font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300 flex flex-row">
                 <a className="text-sm md:text-base" target="_blank" rel="noopener noreferrer" href="https://www.overleaf.com/read/hkpkfjvwsnfd#c11142">Resume </a> <Arrow />

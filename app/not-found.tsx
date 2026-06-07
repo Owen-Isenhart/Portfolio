@@ -19,7 +19,7 @@ export default function NotFound() {
               <h1>4</h1>
             </div>
             <div className="w-full flex flex-col justify-center items-center pt-3">
-              <p className="font-sans text-sm md:text-xl lg:text-2xl">You're not supposed to be here. Luther is upset with you.</p>
+              <p className="font-sans text-sm md:text-xl lg:text-2xl">You&apos;re not supposed to be here. Luther is upset with you.</p>
               <p className="font-sans text-xs md:text-sm mb-4">(404 page not found)</p>
 
               <div className="group font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300 flex flex-row items-start justify-center">
