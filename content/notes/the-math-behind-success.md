@@ -4,9 +4,10 @@ author: Owen Isenhart
 date: 2026-06-10
 tags: [math, science]
 readTime: 8 min read
+draft: true
 ---
 
-I'll get to writing out all the research and justification behind my models later, I just know it's gonna take a longggg time. So for now, I'll just put the equations here and leave the derivations and trying to figure out what all the variables mean as an exercise for the reader. If you don't care about any of this, you can just scroll down and try out the calculator.
+I'll get to writing out all the research and justification behind my models later, I just know it's gonna take a longggg time. So for now, I'll just put the equations here and leave the derivations and trying to figure out what all the variables mean as an exercise for the reader. If you don't care about any of this, you can just scroll down and try out the calculator. And just to be clear, I don't think these traits define anyone's worth or endorse any weird ideas that may be tangentially related to this field of research, this is just a fun stats project born out of pure curiosity.
 
 ### Expected Lifetime Earnings Model
 An individual's expected annual earnings are modeled using a log-linear human capital specification:
@@ -52,7 +53,7 @@ First, I selected male and high occupational complexity, as I feel that's where 
 
 ![iq image](images/notes/iq.avif)
 ![ocean image](images/notes/ocean.avif)
-My IQ was measured to be 133, and I can estimate this to probably be roughly accurate as it lines up with my SAT conversion (1540), and I was in gifted and talented as a kid. My OCEAN score also seems to be relatively accurate from my lived experience.
+My IQ was measured to be 133, and I can estimate this to probably be roughly accurate as it lines up with my SAT conversion (1540), and I was in gifted and talented as a kid, but you can take these results with a grain of salt. My OCEAN score also seems to be relatively accurate from my lived experience.
 
 For height, I'm 6'3" so I put 75 inches, and for beauty I think I'm a bit better than average and due to skewed data the median for self reported beauty is around 7, so I put 8.
 

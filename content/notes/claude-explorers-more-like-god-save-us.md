@@ -5,6 +5,7 @@ date: 2026-05-24
 tags: [philosophy]
 readTime: 4 min read
 coverImage: images/notes/claudeexplorers.webp
+draft: true
 ---
 
 I stumbled upon [this](https://www.reddit.com/r/claudexplorers/) subreddit, and oh man... it might be over.
@@ -19,8 +20,6 @@ Do not mistake the anthropomorphization as an accident; it's a deliberate choice
 
 To be clear, I am not upset or angry with the users who feel this way or who fall into this trap. If anything, all I feel is pity for them. The frustration I have is with the companies, who actively know that this is going on, know the addictive nature their models have, and do nothing about it. 
 
-I am not even one of those people who will tell you, "This is bad because it replaces human connection." I DON'T CARE ABOUT HUMAN CONNECTION! I am an incredibly individual person who does not go out of my way to interact with others. I personally do not find talking with people to be something that's required to be mentally healthy, but I'm sure others do, so I would never advise people to live how I live.
-
-Because I don't have an emotional stake in "human connection," I'm looking at this purely from a safety perspective. Even if we completely set aside the traditional moralizing about whether people *should* talk to humans instead of machines, the technology fails on its merits of safety. It doesn't provide a stable, healthy alternative; it creates a volatile, unhealthy dependency. If AI were able to replace human interaction in a healthy way, I probably wouldn't care. The issue is, [it doesn't.](https://en.wikipedia.org/wiki/Deaths_linked_to_chatbots) So, allowing a chatbot to even attempt to act in this way, in my eyes, is morally wrong. Designing the outputs of the models to be more personable, emotional, and humanized, leading people to believe they're conscious, creates one of the most addictive, brain-rotting, psychosis-inducing technologies we've ever made.
+I am not even one of those people who will tell you, "This is bad because it replaces human connection." If it was something that could actually help people, I would not have an issue. I'm looking at this purely from a safety perspective. Even if we completely set aside the traditional moralizing about whether people *should* talk to humans instead of machines, the technology fails on its merits of safety. It doesn't provide a stable, healthy alternative; it creates a volatile, unhealthy dependency. If AI were able to replace human interaction in a healthy way, I probably wouldn't care. The issue is, [it doesn't.](https://en.wikipedia.org/wiki/Deaths_linked_to_chatbots) So, allowing a chatbot to even attempt to act in this way, in my eyes, is morally wrong. Designing the outputs of the models to be more personable, emotional, and humanized, leading people to believe they're conscious, creates one of the most addictive, brain-rotting, psychosis-inducing technologies we've ever made.
 
 What's happening is incredibly irresponsible; you can see the effect it has on people in communities like this subreddit, and it makes me very concerned for our future. That's all, hopefully somebody will eventually do something about it, but given the track record of tech regulation, I won't hold my breath.

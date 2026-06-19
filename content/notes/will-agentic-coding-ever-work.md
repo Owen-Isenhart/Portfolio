@@ -5,6 +5,7 @@ date: 2026-05-14
 tags: [coding, philosophy]
 readTime: 6 min read
 coverImage: /images/notes/agents.webp
+draft: true
 ---
 
 Short answer: maybe
@@ -42,7 +43,7 @@ For this case to cross the finish line, we would need a fundamental architectura
 
 This case means agents work incredibly fast, are cost-effective, and make basically no safety mistakes because they are tightly bound, but they are still not at the level where they can work alone. They still require high-level human direction, oversight, and validation.
 
-This is actually not a bad outcome at all; it just means the human engineer has become a lot more efficient. But it fundamentally fails to live up to the "engineers will be replaced" promise. If a human still has to manually review every PR, verify every terminal tool call, and map out the architecture, the agent is an assistant, not a replacement.
+This is actually not a bad outcome at all; it just means the human engineer has become a lot more efficient. But it fundamentally fails to live up to the "engineers will be replaced" promise. If a human is still required, the AI still maintains the role of being more of an assistant than anything. Additionally, this can still cause issues in the feasibility of this case working at all, because if a human is still required to make the higher level decisions but offloads all the work and implementation understanding to an agent, then the human's decisions will inevitably become worse as they have less knowledge of the growing product.
 
 The bottleneck here is context-window degradation and the "needle in a haystack" problem. As an enterprise codebase grows across multi-layered, distributed repositories, an unsupervised agent begins to lose its semantic memory of the broader architecture, causing task failure rates to spike unless a human is there to spoon-feed it context.
 
