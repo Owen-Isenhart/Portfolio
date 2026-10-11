@@ -21,7 +21,7 @@ export default async function Home() {
         <Introduction />
         <Experience />
         <HomeProjects />
-        <HomeNotes notes={notes} />
+        {notes.length > 0 && <HomeNotes notes={notes} />}
         <HomeLens />
       </main>
       <Footer />

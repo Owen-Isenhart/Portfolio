@@ -4,6 +4,7 @@ author: Owen Isenhart
 date: 2026-06-6
 tags: [philosophy]
 readTime: 3 min read
+draft: true
 ---
 
 To an extent.

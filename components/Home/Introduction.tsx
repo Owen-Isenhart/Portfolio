@@ -1,8 +1,15 @@
 import Arrow from "../General/Arrow";
 import Image from "next/image"
 import { Sparkle } from "lucide-react"
+import { connection } from "next/server";
 
-export default function Introduction() {
+export default async function Introduction() {
+  // Calculate at request time so the age stays current without rebuilding the site.
+  await connection();
+  const today = new Date();
+  const birthdayThisYear = new Date(today.getFullYear(), 8, 9);
+  const age = today.getFullYear() - 2005 - (today < birthdayThisYear ? 1 : 0);
+
   const marqueeItems = [
     "Full Stack Engineering",
     "Cloud Architecture",
@@ -20,7 +27,7 @@ export default function Introduction() {
           <div className="flex flex-row mx-auto max-w-3xl items-start p-6 border-x border-dashed border-[var(--outline)]">
             <div className="max-w-3xl w-full mx-auto flex flex-col items-start">
               <h2 className="font-space pb-2 text-xl sm:text-2xl md:text-3xl">Hey, I&apos;m <span className="pirata-on-dark purple-glow"><span>O</span><span>w</span><span>e</span><span>n</span><span>!</span></span></h2>
-              <p className="font-sans text-sm md:text-base pr-6 pb-2">I&apos;m a passionate 20-year-old computer science student at UTD dedicated to building high-quality software. 
+              <p className="font-sans text-sm md:text-base pr-6 pb-2">I&apos;m a passionate {age}-year-old computer science student at UTD dedicated to building high-quality software.
                 <span className="hidden sm:inline"> In my free time, I&apos;m typically working on projects, learning new things, playing games, or at the gym!</span>
               </p>
               <div className="group font-mono tracking-tight underline decoration-from-font underline-offset-2 pb-1 hover:cursor-pointer hover:decoration-[var(--accent)] hover:underline-offset-3 transition-all ease-in-out duration-300 flex flex-row">

@@ -5,6 +5,7 @@ date: 2026-06-19
 tags: [philosophy]
 readTime: 3 min read
 coverImage: images/notes/consciousness.avif
+draft: true
 ---
 
 I had a dream months ago in which this idea originally came to me, and since then I've had more dreams in which similar ideas have presented themselves. I'll preface this by saying: no, I don't actually take an idea that came to me in a dream to be gospel, I just thought it was interesting.
