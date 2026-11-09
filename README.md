@@ -7,9 +7,10 @@ This is a personal website that serves as a central hub for information about me
 
 ## Deployment
 
-The homelab deployment serves `oisenhart.com` and `www.oisenhart.com` from K3s
-and Traefik through a dedicated Cloudflare Tunnel. See the
-[deployment runbook](docs/DEPLOYMENT.md) for the Route 53 migration, first
-release, and operating commands.
+The portfolio runs on K3s in a Proxmox VE virtual machine in my homelab.
+Cloudflare manages DNS and public HTTPS for `oisenhart.com` and
+`www.oisenhart.com`, and a dedicated Cloudflare Tunnel forwards requests to
+Traefik in the cluster. GitHub Actions builds and tests the Docker image
+and publishes it to GitHub Container Registry.
 
-The legacy deployment used AWS Amplify.
+See the [deployment runbook](docs/DEPLOYMENT.md) for release and operating commands.

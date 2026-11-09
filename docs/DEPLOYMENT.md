@@ -1,12 +1,16 @@
 # Portfolio on the homelab
 
-Cloudflare terminates public HTTPS and routes `oisenhart.com` and
-`www.oisenhart.com` through a dedicated tunnel to the existing K3s Traefik
-service. Traefik routes both hosts to two Next.js pods in the `portfolio`
-namespace. The connector and its credentials live in `portfolio-cloudflare`.
-Both replicas share one physical node.
+The portfolio runs on K3s in a Proxmox VE virtual machine. Cloudflare
+terminates public HTTPS for `oisenhart.com` and `www.oisenhart.com` and
+forwards requests through a dedicated tunnel to Traefik. Traefik routes
+both hosts to two Next.js pods in the `portfolio` namespace. The connector
+and its credentials live in `portfolio-cloudflare`. Both app replicas run
+in the same VM on one physical host.
 
-## Move DNS, then transfer registration
+## Route 53 migration reference
+
+Cloudflare now manages both registration and authoritative DNS for
+`oisenhart.com`. These steps document the original migration.
 
 1. In Cloudflare, add `oisenhart.com` as a full zone on the Free plan in the
    account that will own the tunnel. In AWS, open **Route 53 → Hosted zones →
@@ -30,9 +34,8 @@ Both replicas share one physical node.
    itself as registrar.
 
 Public lookups on November 9 found the Google verification TXT at the apex,
-no apex A, AAAA, or MX answer, and no `www` A answer. Use the full AWS hosted
-zone as the source for the migration. The former Amplify documentation
-referenced `www.owenisenhart.com`, a separate domain.
+no apex A, AAAA, or MX answer, and no `www` A answer. The AWS hosted zone
+was the source of record for the migration.
 
 [AWS nameserver instructions](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-name-servers-glue-records.html)
 

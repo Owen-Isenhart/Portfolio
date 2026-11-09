@@ -80,8 +80,8 @@ export const projects = [
     title: "Portfolio",
     coverImage: "/images/projects/portfolioCover.avif", 
     description: "The website you're on right now!",
-    overview: "This site hosts imformation about me, my projects, and my occasional notes. I made it in Next.js with Tailwind, my notes integrate from Notion's API, and is deployed using AWS Amplify and Route 53.",
-    skills: ["Next.js", "Tailwind", "Notion API", "AWS"],
+    overview: "I built this site with Next.js and Tailwind to share my projects and notes. I run it on K3s in a Proxmox VM in my homelab. Cloudflare Tunnel connects visitors to the site through Traefik.",
+    skills: ["Next.js", "Tailwind", "Docker", "Proxmox", "K3s", "Traefik", "Cloudflare Tunnel"],
     features: [ 
       "All Green Google Lighthouse Report:Optimized the site and achievied 94+ in every metric (Performance, Accessibility, Best Practices, and SEO)",
       "UI and Responsiveness:I carefully crafted the feel and look of this website to make it a smooth experience, and made sure no matter the screen size everything displays properly",
