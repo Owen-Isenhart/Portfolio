@@ -7,4 +7,9 @@ This is a personal website that serves as a central hub for information about me
 
 ## Deployment
 
-The website is deployed and hosted on **AWS Amplify**, which provides a continuous deployment pipeline from the main branch of the GitHub repository. The domain is managed using **AWS Route 53**.
+The homelab deployment serves `oisenhart.com` and `www.oisenhart.com` from K3s
+and Traefik through a dedicated Cloudflare Tunnel. See the
+[deployment runbook](docs/DEPLOYMENT.md) for the Route 53 migration, first
+release, and operating commands.
+
+The legacy deployment used AWS Amplify.

@@ -1,0 +1,2 @@
+cloudflare_account_id = "replace-with-cloudflare-account-id"
+cloudflare_zone_id    = "replace-with-oisenhart-com-zone-id"

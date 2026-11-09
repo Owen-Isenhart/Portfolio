@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.owenisenhart.com/sitemap.xml

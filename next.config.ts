@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: process.env.PORTFOLIO_STANDALONE === "1" ? "standalone" : undefined,
   images: {
     remotePatterns: [
       {

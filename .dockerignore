@@ -1,0 +1,12 @@
+*
+!package.json
+!package-lock.json
+!next.config.ts
+!tsconfig.json
+!eslint.config.mjs
+!postcss.config.mjs
+!app/
+!components/
+!content/
+!lib/
+!public/
